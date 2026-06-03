@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web to lead form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+</head>
+<body>
+ 
+
+<form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00DWU00000lOTpD" method="POST" onsubmit="returndate()">
+
+<input type=hidden name="oid" value="00DWU00000lOTpD">
+<input type=hidden name="Lead_date__c" class="outputDate">
+<input type=hidden name="retURL" value=" ">
+
+
+<h1> Create Lead</h1>
+<label for="title">Title</label><input  id="title" maxlength="40" name="title" size="20" type="text" required="true"/><br>
+
+<label for="first_name">First Name</label><input  id="first_name" maxlength="40" name="first_name" size="20" type="text" required="true"/><br>
+
+<label for="last_name">Last Name</label><input  id="last_name" maxlength="80" name="last_name" size="20" type="text" required="true"/><br>
+
+<label for="mobile">Mobile</label><input  id="mobile" maxlength="40" name="mobile" size="20" type="text" required="true"/><br>
+
+<label for="email">Email</label><input  id="email" maxlength="80" name="email" size="20" type="text" required="true"/><br>
+
+<label for="country">Country</label><input  id="country" maxlength="40" name="country" size="20" type="text" /><br>
+<label >Lead Date</label><input maxlength="40" name="Lead_date__c" class="inputdate" size="20" type="date" required="true"/><br>
+
+<input class="submit" type="submit" name="submit">
+
+</form>
+
+</body>
+</html>
